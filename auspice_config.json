@@ -1,0 +1,71 @@
+{
+  "title": "MONKEYPOX GENOMIC SURVILLANCE OF 358 PERUVIAN GENOMES USING 2447 COMPLETE GENOMES OF GISAID",
+  "maintainers": [
+    {"name": "GENOMIC SURVILLANCE GROUP - INSTUTO NACIONAL DE SALUD PERU"}
+  ],
+  "build_url": "https://github.com/INS-LBBM/MONKEYPOX",
+  "panels": ["tree", "map", "entropy", "frequencies"],
+  "colorings": [
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "date",
+      "title": "Date",
+      "type": "continuous"
+    },
+    {
+      "key": "continent",
+      "title": "Continent",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "clade",
+      "title": "Clade",
+      "type": "categorical"
+    },
+    {
+      "key": "lineage",
+      "title": "Lineage",
+      "type":"categorical"
+    },
+    {
+      "key": "sex",
+      "title": "Sex",
+      "type":"categorical"
+    },
+    {
+      "key": "age",
+      "title": "Age",
+      "type":"continuous"
+    },
+    {
+      "key": "province",
+      "title": "Province",
+      "type":"categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "country"
+  ],
+  "display_defaults": {
+    "map_triplicate": true
+
+  },
+  "filters": [
+    "country",
+    "continent",
+    "age",
+    "clade",
+    "lineage",
+    "province",
+    "sex"
+  ]
+}
