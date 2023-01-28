@@ -34,7 +34,7 @@ head(e)
 write.fasta(f,"peru_2.fasta",names=e$gisaid)
 
 ############################################
-## merge NETLAB metadata - GISAID metadta ##
+## merge NETLAB metadata - GISAID metadata ##
 ############################################
 
 setwd("/home/vjimenez/Documentos/monkey_research/monkey_270123")
@@ -65,7 +65,7 @@ dim(c)
 write.table(c,"metadata_1.tsv", sep="\t", row.names = FALSE)
 
 ###############################################
-## merge GISAID metadata and NETLAB metadata ## 
+## merge GENERAL metadata and NEXTCLADE results## 
 ###############################################
 a <- read.csv("metadata_1.tsv", header=TRUE, sep="\t")
 dim(a)
